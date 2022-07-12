@@ -1,0 +1,585 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 50px;
+    background-color: #333;
+}
+
+.logo{
+   font-size: 50px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.contact-link button {
+    padding: 10px 20px;
+    font-size: 25px;
+    color: #fff;
+    background-color: #0452fa77;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: all 0.5s ease;
+}
+
+.contact-link button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+nav ul {
+    list-style: none;   
+}
+
+nav ul li {
+   display: inline; 
+   padding: 20px 40px;
+   background-color: rgb(0, 255, 136);
+   margin: 0 30px;
+}
+
+nav ul li a {
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+nav ul li a:hover {
+      color: blue;         
+}
+
+#home {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(66, 50, 50, 0.3),rgb(39, 70, 66)),url(background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+ 
+}
+
+.home-text {
+    padding-top: 150px;
+    text-align: center;
+    color: white;
+}
+
+.home-text h1 {
+    font-size: 80px;
+    margin-bottom: 20px;
+}
+
+.home-text p {
+    font-size: 26px;
+}
+
+.hero {
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+
+}
+
+.hero-text{
+    text-align: center;
+    color: wheat;
+    width: 48%;
+    padding: 10px;
+}
+
+.hero-text h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 22px;
+}
+
+.hero-text button {
+    font-size: 23px;
+    padding: 10px 30px;
+    margin-top: 10px;
+    border-radius: 30px;
+    background-color: #0452fade;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    color: #fff;
+}
+
+.hero-text button:hover {
+    background-color: #fff;
+    color: #000;
+  }
+
+.hero-image {
+    width: 47%;
+}
+
+
+.hero-image img {
+    width: 100%;
+    height: 240px;
+}
+
+#service {
+    background-color: gray;
+    padding: 30px 0px 50px 0px;
+    color: #fff;
+}
+#service h1 {
+    font-size: 80px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.service-list {
+    padding: 0 10px;
+    width: 100%;
+    gap: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.service-desc {
+    text-align: center;
+    width: 20%;
+}
+
+.service-desc p {
+    font-size: 20px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.service-desc img {
+    width: 100%;
+    height: 130px;
+    
+}
+
+#about {
+    background-color: rgb(209, 183, 168);
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
+.about-content {
+    width: 90%;
+    padding: 30px 20px;
+    background-color: rgb(76, 89, 111);
+    border-radius: 50px;
+    margin: auto;
+    color: #fff;
+}
+
+.about-text {
+    text-align: center;
+    
+}
+
+.about-text h5 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+#contact {
+    background-color: gray;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    color: white;
+}
+
+.contact-address {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    gap: 40px;
+}
+
+.contact-address div {
+    border: 2px solid black;
+    width: 400px;
+   
+}
+
+address {
+    padding: 20px 0px;
+}
+
+address p {
+    font-size: 25px;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.contact-final {
+    width: 80%;
+    text-align: center;
+    background: rgb(100, 150, 200);
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin: 30px auto;
+    padding: 40px 0px;
+    border-radius: 20px;
+}
+
+.contact-final h3 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.contact-final p{
+    font-size: 24px;
+    width: 700px;
+}
+
+.contact-final button {
+    font-size: 23px;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 30px;
+    background-color: #0452fade;
+    cursor: pointer;
+    height: 50px;
+    color: #fff;
+    transition: all 0.5s ease;
+}
+
+.contact-final button:hover {
+    background-color: #fff;
+    color: #000;
+  }
+
+.social-links p{
+    text-align: center;
+}
+
+@media screen and (max-width: 767px){
+    #contact {
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+    
+    .contact-address {
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    
+    .contact-address div {
+        width: 300px;
+    }
+    
+    address {
+        padding: 15px 0px;
+    }
+    
+    address p {
+        font-size: 17px;
+        padding: 7px 0px;
+    }
+    
+    .contact-final {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-top: 15px;
+        margin: 20px auto;
+        padding: 20px 0px;
+        border-radius: 20px;
+    }
+    
+    .contact-final h3 {
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+    
+    .contact-final p{
+        text-align: center;
+        font-size: 16px;
+        width: 100%;
+    }
+    
+    .contact-final button {
+        font-size: 16px;
+        padding: 5px 20px;
+        margin-top: 15px;
+        height: 30px;
+    }
+    
+  }
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+    #contact {
+        padding-top: 25px;
+        padding-bottom: 35px;
+    }
+    
+    .contact-address {
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+    
+    .contact-address div {
+        width: 400px;
+    }
+    
+    address {
+        padding: 18px 0px;
+    }
+    
+    address p {
+        font-size: 19px;
+        padding: 9px 0px;
+    }
+    
+    .contact-final {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-top: 19px;
+        margin: 25px auto;
+        padding: 25px 0px;
+        border-radius: 20px;
+    }
+    
+    .contact-final h3 {
+        font-size: 25px;
+        margin-bottom: 15px;
+    }
+    
+    .contact-final p{
+        text-align: center;
+        font-size: 18px;
+        width: 100%;
+    }
+    
+    .contact-final button {
+        font-size: 18px;
+        padding: 8px 25px;
+        margin-top: 18px;
+        height: 40px;
+    }
+  }
+
+@media screen and (max-width: 767px){
+    .about-text h5 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .about-text p {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+    .about-text h5 {
+        font-size: 25px;
+        margin-bottom: 15px;
+    }
+    
+    .about-text p {
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #service h1 {
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    
+    .service-list {
+        gap: 20px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .service-desc {
+        text-align: center;
+    }
+    
+    .service-desc p {
+        font-size: 16px;
+        margin-top: 8px;
+        width: 200px;
+    }
+    
+    .service-desc img {
+        width: 200px;
+        height: 100px;
+        
+    }
+    
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+    #service {
+        padding: 30px 0px 50px 0px;
+        color: #fff;
+    }
+    #service h1 {
+        font-size: 50px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    
+    .service-list {
+        padding: 0 10px;
+        width: 100%;
+        gap: 10px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    .service-desc {
+        text-align: center;
+        width: 20%;
+    }
+    
+    .service-desc p {
+        font-size: 20px;
+        margin-top: 10px;
+        width: 100%;
+    }
+    
+    .service-desc img {
+        width: 100%;
+        height: 130px;
+        
+    }
+    
+}
+
+@media screen and (max-width: 767px) {
+    .hero {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 30px;
+    
+    }
+
+    .hero-text h2 {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+    
+    .hero-text p {
+        font-size: 16px;
+    }
+    
+    .hero-text button {
+        font-size: 16px;
+        padding: 3px 15px;
+        margin-top: 10px;
+        border-radius: 20px;
+        background-color: #0452fade;
+        cursor: pointer;
+    }
+
+    .hero-image img {
+        width: 150px;
+        height: auto;
+        margin-top: 30px;
+        padding-right: 10px;
+    }
+    
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+    .hero {
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+
+    }
+
+    .hero-text h2 {
+        font-size: 35px;
+        margin-bottom: 9px;
+    }
+    
+    .hero-text p {
+        font-size: 20px;
+    }
+    
+    .hero-text button {
+        font-size: 20px;
+        padding: 5px 18px;
+        margin-top: 18px;
+        border-radius: 20px;
+        background-color: #0452fade;
+        cursor: pointer;
+    }
+
+    .hero-image img {
+        width: 300px;
+        height: 200px;
+    }
+    
+}
+
+@media screen and (max-width: 767px) {
+    .home-text h1 {
+        font-size: 60px;
+        margin-bottom: 15px;
+    }
+    
+    nav ul li a, .contact-link button, .home-text p {
+        font-size: 17px;
+    }
+
+    header img {
+        height: 70px;
+        width: 70px;
+        
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .home-text h1 {
+        font-size: 80px;
+        margin-bottom: 17px;
+    }
+    
+    nav ul li a, .contact-link button, .home-text p {
+        font-size: 19px;
+    }
+
+    header img {
+        height: 80px;
+        width: 80px;
+        
+    }
+}
